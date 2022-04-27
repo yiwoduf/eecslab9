@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GPU Store</title>
+</head>
+
+<body>
+    <h1>EECS Web Store</h1>
+
+    <main>
+        <div id="background"></div>
+        <form action="customerBackend.php" method="post">
+            <h3>Graphic Cards</h3>
+            <br>
+            EVGA GeForce RTX 3080 Ti - 3$
+            <br>
+            Quantity: <input type="number" id="3080ti" name="3080ti" min="0">
+            <br><br>
+
+            MSI Gaming GeForce RTX 3090 - 2$
+            <br>
+            Quantity: <input type="number" id="3090" name="3090" min="0"><br><br>
+
+            MSI Gaming Radeon RX 6900 XT - 1$
+            <br>
+            Quantity: <input type="number" id="6900" name="6900" min="0">
+            <br><br>
+
+            <h3>Please enter your information:</h3>
+            <br>
+            Username:<input type="text" name="username" id="username">
+            <br>
+            Password: <input type="text" name="password" id="password">
+            <br><br>
+
+            <h4>Choose your shipping option:</h4>
+            <input type="radio" name="shippingFee" id="free" value="Free 7 Day">Free 7 Day<br>
+            <input type="radio" name="shippingFee" id="overNight" value="$50 Over Night">$50.00 Over Night<br>
+            <input type="radio" name="shippingFee" id="threeDay" value="$5 Three Day">$5.00 Three Day<br><br><br>
+            <input type="submit" id="submit" value="Continue">
+            <input type="reset">
+        </form>
+    </main>
+    <script src="formChecker.js"></script>
+</body>
+
+</html>
